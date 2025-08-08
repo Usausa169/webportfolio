@@ -4,13 +4,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio</title>
+
+	<!-- Bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:wght@450&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+
+	<!-- Devicons -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -46,11 +53,10 @@
 				<div class="col-md-6 d-flex justify-content-center">
 					<img src="./images/profile-pic.jpg" alt="Profile" 
 					class="rounded-circle border border-dark profile-pic img-fluid">
-
 				</div>
 				<div class="col-md-6 py-5 text-center text-md-start">
 					<h1 id="trainee-name" class="display-5 fw-bold">Santiago Raphael Gutierrez</h1>
-					<h3>Full Stack Web Developer</h3>
+					<h3>Developer</h3>
 					<p class="intro-text mt-3 mb-4">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					</p>
@@ -60,7 +66,7 @@
 	</section>
 
 	<!-- Projects Section -->
-	<section id="myprojects" class="py-5" style="background-color: #f4f8fc;">
+	<section id="myprojects" class="py-5 myprojects-bg">
 		<div class="container">
 			<h4 class="text-center pb-4">My Projects</h4>
 			<div class="row justify-content-center gy-4 gx-4">
@@ -180,7 +186,7 @@
 								<div class="skill-label">Postman</div>
 							</div>
 							<div class="skill-item d-flex align-items-center gap-2" title="Sublime Text">
-								<img src="" alt="Sublime Text" id="sublime">
+								<img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Sublime_Text_3_logo.png" alt="Sublime Text" id="sublime">
 								<div class="skill-label">Sublime Text</div>
 							</div>
 						</div>
@@ -191,8 +197,6 @@
 		</div>
 	</section>
 
-
-
 	<!-- Contact Section -->
 	<section id="contact" class="py-5 bg-light">
 		<div class="container">
@@ -202,37 +206,37 @@
 				<!-- Map -->
 				<div class="col-md-6 mb-4 mb-md-0">
 					<iframe 
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.9223145726264!2d120.99629097511163!3d14.603311977657188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9f7b2f34237%3A0xeccf0b7d5d5a940f!2sCentro%20Escolar%20University!5e0!3m2!1sen!2sph!4v1691674490354!5m2!1sen!2sph" 
-					width="100%" 
-					height="300" 
-					style="border:0;" 
-					allowfullscreen="" 
-					loading="lazy">
-				</iframe>
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.9223145726264!2d120.99629097511163!3d14.603311977657188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9f7b2f34237%3A0xeccf0b7d5d5a940f!2sCentro%20Escolar%20University!5e0!3m2!1sen!2sph!4v1691674490354!5m2!1sen!2sph" 
+						width="100%" 
+						height="300" 
+						class="map-frame" 
+						allowfullscreen="" 
+						loading="lazy">
+					</iframe>
+				</div>
+
+				<!-- Contact Form -->
+				<div class="col-md-6">
+					<form>
+						<input type="text" class="form-control mb-3" placeholder="First Name M.I. Last Name" required>
+						<input type="email" class="form-control mb-3" placeholder="Email" required>
+						<textarea class="form-control mb-3" rows="4" placeholder="Message" required></textarea>
+
+						<!-- Social Icons -->
+						<div class="mb-3">
+							<a href="https://linkedin.com" class="me-3"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="30"></a>
+							<a href="https://gitlab.com" class="me-3"><img src="https://cdn.worldvectorlogo.com/logos/gitlab.svg" alt="GitLab" width="30"></a>
+							<a href="https://github.com"><img src="https://cdn-icons-png.flaticon.com/256/25/25231.png" alt="GitHub" width="30"></a>
+						</div>
+
+						<!-- Submit Button -->
+						<button type="submit" class="btn btn-primary px-4">Submit</button>
+					</form>
+				</div>
+
 			</div>
-
-			<!-- Contact Form -->
-			<div class="col-md-6">
-				<form>
-					<input type="text" class="form-control mb-3" placeholder="First Name M.I. Last Name" required>
-					<input type="email" class="form-control mb-3" placeholder="Email" required>
-					<textarea class="form-control mb-3" rows="4" placeholder="Message" required></textarea>
-
-					<!-- Social Icons -->
-					<div class="mb-3">
-						<a href="#" class="me-3"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/500px-LinkedIn_logo_initials.png" alt="LinkedIn" width="30"></a>
-						<a href="#" class="me-3"><img src="https://cdn.worldvectorlogo.com/logos/gitlab.svg" alt="GitLab" width="30"></a>
-						<a href="#"><img src="https://cdn-icons-png.flaticon.com/256/25/25231.png" alt="GitHub" width="30"></a>
-					</div>
-
-					<!-- Submit Button -->
-					<button type="submit" class="btn btn-primary px-4">Submit</button>
-				</form>
-			</div>
-
 		</div>
-	</div>
-</section>
+	</section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
