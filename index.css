@@ -15,3 +15,14 @@
 h1, h3, h4 {
 	font-family: "Montserrat", sans-serif;
 }
+
+.project-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
