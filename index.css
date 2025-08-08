@@ -1,60 +1,164 @@
-.navbar {
-	color: #ffffff;
+/* ===== General Typography ===== */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f8f9fa; /* Light background */
+    color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* ===== Navbar ===== */
+.custom-navbar {
+    background-color: #6c757d; /* Same as Bootstrap bg-secondary */
+}
+
+.custom-nav-list {
+    display: flex;
+    gap: 2rem;
+    padding: 0.5rem 0;
+}
+
+.custom-nav-list .nav-link {
+    color: #fff;
+}
+
+.custom-nav-list .nav-link:hover {
+    color: #dcdcdc;
+}
+
+/* ===== Landing Section ===== */
+.landing-section {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
 }
 
 .profile-pic {
     max-width: 300px;
-    width: 100%;      
-    height: auto;     
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #000;
 }
 
-.project-img {
-	height: auto;
-	max-width: 100%;
+.display-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
-h1, h3, h4 {
-	font-family: "Montserrat", sans-serif;
+.lead-text {
+    font-size: 1.25rem;
+}
+
+.role-title {
+    margin-top: 1rem;
+}
+
+.intro-text {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* ===== Projects Section ===== */
+.projects-section {
+    background-color: #ffffff;
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 1.75rem;
 }
 
 .project-card {
     background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
-.section-title {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #0d47a1;
-  margin-bottom: 2rem;
+.project-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
 }
 
-/*TOOLS SECTION*/
-/* Tools and skills Section */
-.tools-subtitle{
-  color: #052557;
-
+/* ===== Tools Section ===== */
+.tools-section {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #f8f9fa;
 }
-#tools .tool-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem 2.5rem;
+
+.tools-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.tool-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90px;
-  cursor: default;
-  transition: transform 0.3s ease, color 0.3s ease;
-  color: #A8EB12;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-icon {
+    font-size: 60px; /* Devicon icons size */
+}
+
+.sublime-icon {
+    width: 60px;
+    height: auto;
+}
+
+.skill-label {
+    font-size: 1rem;
+}
+
+/* ===== Contact Section ===== */
+.contact-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.map-frame {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.icon-small {
+    width: 30px;
+    height: auto;
+}
+
+/* ===== Buttons ===== */
+.custom-btn {
+    padding: 0.5rem 1.5rem;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+    .display-heading {
+        font-size: 2rem;
+    }
+
+    .profile-pic {
+        max-width: 200px;
+    }
 }
