@@ -3,8 +3,9 @@
 }
 
 .profile-pic {
-	width: 300px;
-	height: auto;
+    max-width: 300px;
+    width: 100%;      
+    height: auto;     
 }
 
 .project-img {
@@ -25,4 +26,35 @@ h1, h3, h4 {
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0d47a1;
+  margin-bottom: 2rem;
+}
+
+/*TOOLS SECTION*/
+/* Tools and skills Section */
+.tools-subtitle{
+  color: #052557;
+
+}
+#tools .tool-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem 2.5rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+  cursor: default;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #A8EB12;
 }
