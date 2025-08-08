@@ -8,58 +8,94 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:wght@450&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
-<body class="background-image">
-	<nav class="fixed navbar navbar-expand-lg navbar-light bg-secondary">
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
 		<div class="container-fluid justify-content-center">
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse justify-content-center" id="navbar">
+			<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
 				<ul class="navbar-nav d-flex justify-content-center py-2 gap-5">
 					<li class="nav-item">
-						<a class="nav-link active text-white" href="#">Home</a>
+						<a class="nav-link active text-white" href="#landing">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-white" href="#">Projects</a>
+						<a class="nav-link text-white" href="#myprojects">Projects</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-white" href="#">Tools</a>
+						<a class="nav-link text-white" href="#tools">Tools</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-white" href="#">Contacts</a>
+						<a class="nav-link text-white" href="#contact">Contacts</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<section class="content" id="landing bg-light">
+
+	<!-- Landing Section -->
+	<section class="content bg-light" id="landing">
 		<div class="container hero-section py-5">
 			<div class="row align-items-center py-5">
 				<div class="col-md-6 d-flex justify-content-center">
-					<img src="./images/profile pic.jpg" alt="Profile" class="rounded-circle border border-dark" width="300px" >
+					<img src="./images/profile-pic.jpg" alt="Profile" class="rounded-circle border border-dark profile-pic">
 				</div>
-				<div class="col-md-6 py-5">
-					<h1 class="display-5 fw-bold">Hi! I am Santiago Raphael Gutierrez</h1>
-					<h3>Full Stack web developer</h3>
+				<div class="col-md-6 py-5 text-center text-md-start">
+					<h1 id="trainee-name" class="display-5 fw-bold">Santiago Raphael Gutierrez</h1>
+					<h3>Full Stack Web Developer</h3>
 					<p class="intro-text mt-3 mb-4">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					</p>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<section id="myprojects">
-	<div>
-		<h1 class="container-fluid" align="center">My Projects</h1>
-		<div class="row align-items-center py-5">
-			<div class="col-md-4 d-flex justify-content-center">
-				
+	</section>
+
+	<!-- Projects Section -->
+	<section id="myprojects">
+		<div class="container py-5">
+			<h4 class="text-center pb-5">My Projects</h4>
+			<div class="row justify-content-center">
+				<div class="col-md-4 border border-secondary rounded-3 mx-1 p-3">
+					<img src="./images/ecommerce-api.gif" class="img-fluid project-img">
+					<h4>E-commerce API Documentation</h4>
+					<p>Dynamic E-commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It supports automated order reporting and comprehensive product management. Documented Backend API published using Postman.</p>
+				</div>
+				<div class="col-md-4 border border-secondary rounded-3 mx-1 p-3">
+					<img src="./images/booking.jpg" class="img-fluid project-img">
+					<h4>Course Booking API Documentation</h4>
+					<p>RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.</p>
+				</div>
+				<div class="col-md-4 border border-secondary rounded-3 mx-1 p-3">
+					<img src="./images/booking11.jpg" class="img-fluid project-img">
+					<h4>Course Booking App</h4>
+					<p>A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.</p>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	</section>
+
+	<!-- Tools Section -->
+	<section id="tools" class="py-5 bg-light">
+		<div class="container text-center">
+			<h2>Tools</h2>
+			<p>HTML, CSS, JavaScript, Bootstrap, MongoDB, Express.js, React.js, Node.js</p>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section id="contact" class="py-5">
+		<div class="container text-center">
+			<h2>Contact</h2>
+			<p>Email: your@email.com</p>
+			<p>Phone: +63 900 000 0000</p>
+		</div>
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

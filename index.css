@@ -1,7 +1,17 @@
-.navbar{
+.navbar {
 	color: #ffffff;
 }
-h1{
-	
+
+.profile-pic {
+	width: 300px;
+	height: auto;
 }
-background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+
+.project-img {
+	height: auto;
+	max-width: 100%;
+}
+
+h1, h3, h4 {
+	font-family: "Montserrat", sans-serif;
+}
